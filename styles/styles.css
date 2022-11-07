@@ -1,0 +1,36 @@
+body,
+h1 {
+  font-family: "Raleway", sans-serif
+}
+
+body,
+html {
+  height: 100%
+}
+.navLogo{
+  width: 150px;
+  height: auto;
+}
+
+.bgimg {
+  background-image: url('../img/bobbergarage.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.crlts {
+  color: #a9a9a9b8;
+}
+
+.bg-comminSoon{
+  background-color: #00000085;
+    border-radius: 30px;
+    width: auto;
+    padding: 20px;
+    text-align: center;
+}
+.text-header {
+  font-size: 3rem;
+}
