@@ -7,30 +7,99 @@ body,
 html {
   height: 100%
 }
-.navLogo{
+
+/* logo nav-bar*/
+.navLogo {
   width: 150px;
   height: auto;
+  margin: 30px;
 }
 
+/* img textura*/
 .bgimg {
-  background-image: url('../img/moto.png');
+  background-image: url('../img/textura.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
+/* text banner */
+.w3-display-middle {
+  position: absolute;
+  top: 30%;
+  right: auto;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.bg-comminSoon {
+  background-color: #00000085;
+  border-radius: 30px;
+  width: 90%;
+  min-width: 320px;
+  max-width: 550px;
+  padding: 10px;
+  text-align: center;
+  z-index: 3;
+}
+
+.text-header {
+  font-size: 3rem;
+}
+
+/* img Moto */
+img.moto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-width: 200px;
+  max-width: 700px;
+  height: auto;
+  height: auto;
+}
+
+
+/* */
 .crlts {
   color: #a9a9a9b8;
 }
 
-.bg-comminSoon{
-  background-color: #00000085;
-    border-radius: 30px;
-    width: auto;
-    padding: 20px;
-    text-align: center;
+
+
+
+@media only screen and (min-width: 600px) {
+  .w3-display-middle {
+    top: 30%;
+    left: 50%;
+  }
+
+  img.moto {
+    bottom: 0px;
+  }
 }
-.text-header {
-  font-size: 3rem;
+
+@media only screen and (min-width: 768px) {
+
+  img.moto {
+    bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .w3-display-middle {
+    left: 65%;
+    top: 45%;
+}
+.w3-display-topleft {
+    position: relative;
+
+    text-align: center!important;
+
+}
+.navLogo {
+  width: 250px;
+}
 }
