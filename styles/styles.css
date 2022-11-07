@@ -9,10 +9,17 @@ html {
 }
 
 /* logo nav-bar*/
+.w3-display-topleft {
+  position: relative;
+  text-align: center !important;
+}
+
 .navLogo {
-  width: 150px;
+  width: 50%;
+
+  
   height: auto;
-  margin: 30px;
+  margin-top: 30px;
 }
 
 /* img textura*/
@@ -28,7 +35,7 @@ html {
 /* text banner */
 .w3-display-middle {
   position: absolute;
-  top: 30%;
+  top: 40%;
   right: auto;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -46,21 +53,19 @@ html {
 }
 
 .text-header {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 /* img Moto */
 img.moto {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   left: 0;
   width: 100%;
-  min-width: 200px;
-  max-width: 700px;
-  height: auto;
+  min-width: 300px;
+  max-width: 900px;
   height: auto;
 }
-
 
 /* */
 .crlts {
@@ -69,37 +74,51 @@ img.moto {
 
 
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .w3-display-middle {
-    top: 30%;
-    left: 50%;
-  }
-
   img.moto {
-    bottom: 0px;
-  }
+    width: 60%;
+}.navLogo {
+  width: 30%;
+}
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-  img.moto {
-    bottom: 0px;
-  }
 }
 
-@media only screen and (min-width: 991px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   .w3-display-middle {
-    left: 65%;
-    top: 45%;
+    top: 50%!important;
 }
-.w3-display-topleft {
-    position: relative;
-
-    text-align: center!important;
+img.moto {
+  width: 50%;
+}
 
 }
-.navLogo {
-  width: 250px;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (orientation: landscape) {
+  .navLogo {
+    width: 20%;
+    height: auto;
+    margin-top: 0;
+}
+.bg-comminSoon {
+  width: 50%;
+}
+
+.w3-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 73%;
 }
 }
